@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>野球観戦のすゝめ</title>
+</head>
+<body>
+
+
+    <div class="hero-wrapper">
+        <nav id="nav">
+            <div class="nav-wrapper" id="nav-wrapper">
+                <a href="index.html"><h1>野球観戦のすゝめ</h1></a>
+                <ul id="nav-wrapper-ul">
+                    <li><a href="article/step1.html"><span>STEP1</span><br>攻撃基本編</a></li>
+                    <li><a href="article/step2.html"><span>STEP2</span><br>攻撃応用編</a></li>
+                    <li><a href="article/step3.html"><span>STEP3</span><br>守備基本編</a></li>
+                    <li><a href="article/step4.html"><span>STEP4</span><br>守備応用編</a></li>
+                    <li><a href="article/step5.html"><span>STEP5</span><br>判定基本編</a></li>
+                    <li><a href="article/step6.html"><span>STEP6</span><br>判定応用編</a></li>
+                    <li><a href="quiz/quiz-final.html"><span>STEP7</span><br>確認テスト</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="hamburger">
+            <span class="inner_line" id="line1"></span>
+            <span class="inner_line" id="line2"></span>
+            <span class="inner_line" id="line3"></span>
+        </div>
+        <div class="hero-container">
+            <h1>野球観戦のすゝめ</h1>
+            <p>このサイトは野球が好き！だけどルールが分からなくて、見方が分からない...</p><br>
+               そんなあなたに届けたい野球観戦の基本から応用までを紹介するサイトです。<br>
+            </p>
+            <button onclick="location.href='quiz/quiz.html'">前提テストにすすむ</button>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(img/header1.png);"></div>
+              <div class="swiper-slide" style="background-image: url(img/header2.png);"></div>
+              <div class="swiper-slide" style="background-image: url(img/header3.png);"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+        </div>
+    </div>
+
+    <div class="contents-wrapper">
+
+        <a href="article/step1.html">
+            <div class="box">
+                <img src="img/batting.png" alt="STEP1">
+                <h2>STEP1.<br>攻撃基本編</h2>
+            </div>
+        </a>
+
+        <a href="article/step2.html">
+            <div class="box">
+                <img src="img/batting.png" alt="STEP2">
+                <h2>STEP2.<br>攻撃応用編</h2>
+            </div>
+        </a>
+
+        <a href="article/step3.html">
+            <div class="box">
+                <img src="img/tokyuu.png" alt="STEP3">
+                <h2>STEP3.<br>守備基本編</h2>
+            </div>
+        </a>
+
+        <a href="article/step4.html">
+            <div class="box">
+                <img src="img/tokyuu.png" alt="STEP5">
+                <h2>STEP4.<br>守備応用編</h2>
+            </div>
+        </a>
+        <a href="article/step5.html">
+            <div class="box">
+                <img src="img/tohrui.png" alt="STEP5">
+                <h2>STEP5.<br>判定基本編</h2>
+            </div>
+        </a>
+        <a href="article/step6.html">
+            <div class="box">
+                <img src="img/tohrui.png" alt="STEP5">
+                <h2>STEP6.<br>判定応用編</h2>
+            </div>
+        </a>
+        <a href="quiz/quiz-final.html">
+            <div class="box">
+                <img src="img/pitching.png" alt="STEP5">
+                <h2>STEP7.<br>確認テスト</h2>
+            </div>
+        </a>
+
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'fade',
+          loop: true,
+          speed: 2000,
+          autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+          },
+          zoom: {
+            maxRatio: 5,
+          },
+        });
+      </script>
+    <script src="js/hamberger.js"></script>
+</body>
+</html>

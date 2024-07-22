@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/zoom.css">
+    <title>野球観戦のすゝめ</title>
+</head>
+<body>
+
+
+    <div class="hero-wrapper child">
+        <nav id="nav">
+            <div class="nav-wrapper" id="nav-wrapper">
+                <a href="../index.html"><h1>野球観戦のすゝめ</h1></a>
+                <ul id="nav-wrapper-ul">
+                    <li><a href="step1.html"><span>STEP1</span><br>攻撃基本編</a></li>
+                    <li><a href="step2.html"><span>STEP2</span><br>攻撃応用編</a></li>
+                    <li><a href="step3.html"><span>STEP3</span><br>守備基本編</a></li>
+                    <li><a href="step4.html"><span>STEP4</span><br>守備応用編</a></li>
+                    <li><a href="step5.html"><span>STEP5</span><br>判定基本編</a></li>
+                    <li><a href="step6.html"><span>STEP6</span><br>判定応用編</a></li>
+                    <li><a href="../quiz/quiz-final.html"><span>STEP7</span><br>確認テスト</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="hamburger">
+            <span class="inner_line" id="line1"></span>
+            <span class="inner_line" id="line2"></span>
+            <span class="inner_line" id="line3"></span>
+        </div>
+
+        <div class="hero-img-box">
+            <div class="hero-img-text">
+                <h1><span>STEP5</span><br>判定基本編</h1>
+                <p>野球観戦をするうえで必ずと断言していいほど、頻繁に起こる判定の基本を解説します。</p>
+            </div>
+            <img src="../img/header2.png" alt="">
+        </div>
+
+    </div>
+
+    <article>
+        <h2>1.リクエスト</h2>
+        <p>アウトかセーフか判断が難しいプレーなど発生したときに、各チームの監督が審判に主張することで、ビデオでの判定が可能となる制度です。<br>一般的には一試合で二回使うことが出来て、成功すると回数は減りません。四角のような形を作って、使うことをアピールします。</p>
+        <img id="resikaku" src="../img/resikaku.png" data-action="zoom">
+
+        <h2>2.フォアボール</h2>
+        <p>投球が4回ボールを記録すると一塁に進塁することが出来る判定です。<br>
+        日本では四球とも言われます。</p>
+
+        <h2>3.デッドボール</h2>
+        <p>投球が打者の体に当たった時、一塁に進塁することが出来る判定です。<br>
+        日本では死球とも言われます。</p>
+
+        <h2>4.ホームラン</h2>
+        <p>打者が各塁を経て本塁まで進むことができる安打のことを指します。グラウンド外のフェア地域に打球が飛び出すと、得点になります。<br>
+        日本では本塁打とも言われます。</p>
+
+        <h2>5.ファールボール</h2>
+        <p>打者の打球がフェアゾーンに入らなかったことを指します。<br>
+        0,1ストライクの時は、1ストライクが加算されますが、2ストライク以降は、カウントされません。</p>
+
+        <h2>6.敬遠</h2>
+        <p>ピッチャーが意図的にフォアボール(四球)を選択することを指します。<br>
+        監督が意図的にフォアボールを選択する申告敬遠というのもあります。</p>
+
+    </article>
+
+
+    <div class="contents-wrapper">
+
+        <a href="../article/step1.html">
+            <div class="box">
+                <img src="../img/batting.png" alt="STEP1">
+                <h2>STEP1.<br>攻撃基本編</h2>
+            </div>
+        </a>
+
+        <a href="../article/step2.html">
+            <div class="box">
+                <img src="../img/batting.png" alt="STEP2">
+                <h2>STEP2.<br>攻撃応用編</h2>
+            </div>
+        </a>
+
+        <a href="../article/step3.html">
+            <div class="box">
+                <img src="../img/tokyuu.png" alt="STEP3">
+                <h2>STEP3.<br>守備基本編</h2>
+            </div>
+        </a>
+
+        <a href="../article/step4.html">
+            <div class="box">
+                <img src="../img/tokyuu.png" alt="STEP5">
+                <h2>STEP4.<br>守備応用編</h2>
+            </div>
+        </a>
+        <a href="../article/step5.html">
+            <div class="box">
+                <img src="../img/tohrui.png" alt="STEP5">
+                <h2>STEP5.<br>判定基本編</h2>
+            </div>
+        </a>
+        <a href="../article/step6.html">
+            <div class="box">
+                <img src="../img/tohrui.png" alt="STEP5">
+                <h2>STEP6.<br>判定応用編</h2>
+            </div>
+        </a>
+        <a href="../quiz/quiz-final.html">
+            <div class="box">
+                <img src="../img/pitching.png" alt="STEP5">
+                <h2>STEP7.<br>確認テスト</h2>
+            </div>
+        </a>
+
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'fade',
+          loop: true,
+          speed: 2000,
+          autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+          },
+          zoom: {
+            maxRatio: 5,
+          },
+        });
+      </script>
+    <script src="../js/hamberger.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="../js/zoom.js"></script>
+</body>
+</html>

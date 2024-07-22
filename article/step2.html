@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/zoom.css">
+    <title>野球観戦のすゝめ</title>
+</head>
+<body>
+
+
+    <div class="hero-wrapper child">
+        <nav id="nav">
+            <div class="nav-wrapper" id="nav-wrapper">
+                <a href="../index.html"><h1>野球観戦のすゝめ</h1></a>
+                <ul id="nav-wrapper-ul">
+                    <li><a href="step1.html"><span>STEP1</span><br>攻撃基本編</a></li>
+                    <li><a href="step2.html"><span>STEP2</span><br>攻撃応用編</a></li>
+                    <li><a href="step3.html"><span>STEP3</span><br>守備基本編</a></li>
+                    <li><a href="step4.html"><span>STEP4</span><br>守備応用編</a></li>
+                    <li><a href="step5.html"><span>STEP5</span><br>判定基本編</a></li>
+                    <li><a href="step6.html"><span>STEP6</span><br>判定応用編</a></li>
+                    <li><a href="../quiz/quiz-final.html"><span>STEP7</span><br>確認テスト</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="hamburger">
+            <span class="inner_line" id="line1"></span>
+            <span class="inner_line" id="line2"></span>
+            <span class="inner_line" id="line3"></span>
+        </div>
+
+        <div class="hero-img-box">
+            <div class="hero-img-text">
+                <h1><span>STEP2</span><br>攻撃応用編</h1>
+                <p>攻撃基本編を踏まえたうえで、頻繁に起きるうえで、もっと深く攻撃を説明します。</p>
+            </div>
+            <img src="../img/header3.png" alt="">
+        </div>
+
+    </div>
+
+    <article>
+        <h2>1.セーフティバント</h2>
+        <p>バントの戦術の一つで、バントをしたうえで、自分も生き残ろうとする戦術です。<br>
+          主に足の速い人が使用する戦術です。</p>
+
+        <h2>2.犠牲バント</h2>
+        <p>バントの戦術の一つで、自分がアウトになっても走者を次の塁に進ませたいときに使う戦術です。<br>
+        主に1点がどうしても欲しい場面で使う戦術です。</p>
+
+        <h2>3.リード</h2>
+        <p>走者が次の塁に向かって出塁している塁から離れる行為です。<br>
+        遠く離れるほど次の塁に進みやすくなりますが、その分アウトになる危険性もあります。
+        </p>
+
+        <h2>4.引っ張り打ち</h2>
+        <p>打者が利き腕の方向（右利きならライト方向、左利きならレフト方向）に打つ戦術です。<br>
+            <img id="migi" src="../img/step3/hippari.png" data-action="zoom">
+        <h4>↑右打者の場合</h4>
+
+        <h2>5.流し打ち</h2>
+        <p>打者が利き腕と逆の方向（右利きならレフト方向、左利きならライト方向）に打つ戦術です。</p>
+        <img id="migi" src="../img/step3/nagasi.png" data-action="zoom">
+        <h4>↑右打者の場合</h4>
+
+    </article>
+
+    <div class="contents-wrapper">
+
+        <a href="../article/step1.html">
+            <div class="box">
+                <img src="../img/batting.png" alt="STEP1">
+                <h2>STEP1.<br>攻撃基本編</h2>
+            </div>
+        </a>
+
+        <a href="../article/step2.html">
+            <div class="box">
+                <img src="../img/batting.png" alt="STEP2">
+                <h2>STEP2.<br>攻撃応用編</h2>
+            </div>
+        </a>
+
+        <a href="../article/step3.html">
+            <div class="box">
+                <img src="../img/tokyuu.png" alt="STEP3">
+                <h2>STEP3.<br>守備基本編</h2>
+            </div>
+        </a>
+
+        <a href="../article/step4.html">
+            <div class="box">
+                <img src="../img/tokyuu.png" alt="STEP5">
+                <h2>STEP4.<br>守備応用編</h2>
+            </div>
+        </a>
+        <a href="../article/step5.html">
+            <div class="box">
+                <img src="../img/tohrui.png" alt="STEP5">
+                <h2>STEP5.<br>判定基本編</h2>
+            </div>
+        </a>
+        <a href="../article/step6.html">
+            <div class="box">
+                <img src="../img/tohrui.png" alt="STEP5">
+                <h2>STEP6.<br>判定応用編</h2>
+            </div>
+        </a>
+        <a href="../quiz/quiz-final.html">
+            <div class="box">
+                <img src="../img/pitching.png" alt="STEP5">
+                <h2>STEP7.<br>確認テスト</h2>
+            </div>
+        </a>
+
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'fade',
+          loop: true,
+          speed: 2000,
+          autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+          },
+          zoom: {
+            maxRatio: 5,
+          },
+        });
+      </script>
+    <script src="../js/hamberger.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="../js/zoom.js"></script>
+</body>
+</html>
